@@ -14,19 +14,21 @@
 </head>
 <body>
     <div id="header">
-        <h1>CodePlayer</h1>
+        <div id="name">
+            <h1>CodePlayer</h1>
+        </div>
         <div id="buttons">
-            <input type="button" value="HTML" id="htmlButton">
-            <input type="button" value="CSS" id="cssButton">
-            <input type="button" value="JavaScript" id="javascriptButton" >
-            <input type="button" value="Output" id="outputButton" >
+            <input type="button" value="HTML" id="htmlButton" class="button">
+            <input type="button" value="CSS" id="cssButton" class="button">
+            <input type="button" value="JavaScript" id="javascriptButton" class="button">
+            <input type="button" value="Output" id="outputButton" class="button">
         </div>
     </div>
     <div id="grid">
-        <div id="html"></div>
-        <div id="css"></div>
-        <div id="javascript"></div>
-        <div id="output"></div>
+        <div id="html" class="columns"><input type="text" id="htmlText" class="text"></div>
+        <div id="css" class="columns"><input type="text" id="cssText" class="text"></div>
+        <div id="javascript" class="columns"><input type="text" id="javascript" class="text"></div>
+        <div id="output" class="columns"><input type="text" id="outputText" class="text"></div>
     </div>
 </body>
 </html>
