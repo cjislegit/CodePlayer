@@ -1,3 +1,11 @@
 $('input').click(function(){
-    alert('So far so good');
+    $(this).toggleClass('selected');
+    alert($(this).attr('id'));
 })
+
+function displayColumn(buttonId){
+    switch(buttonId){
+        case 'htmlButton':
+        break;
+    }
+}
