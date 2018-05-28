@@ -17,17 +17,17 @@
             <h1>CodePlayer</h1>
         </div>
         <div id="buttons">
-            <input type="button" value="HTML" id="htmlButton" class="button">
-            <input type="button" value="CSS" id="cssButton" class="button">
-            <input type="button" value="JavaScript" id="javascriptButton" class="button">
-            <input type="button" value="Output" id="outputButton" class="button">
+            <input type="button" value="HTML" id="htmlButton" class="button selected">
+            <input type="button" value="CSS" id="cssButton" class="button selected">
+            <input type="button" value="JavaScript" id="javascriptButton" class="button selected">
+            <input type="button" value="Output" id="outputButton" class="button selected">
         </div>
     </div>
     <div id="grid">
         <div id="html" class="columns"><textarea id="htmlText" class="text"></textarea></div>
         <div id="css" class="columns"><textarea id="cssText" class="text"></textarea></div>
         <div id="javascript" class="columns"><textarea id="javascript" class="text"></textarea></div>
-        <div id="output" class="columns"><textarea id="outputText" class="text"></textarea></div>
+        <div id="output" class="columns"><iframe id="outputText"></iframe></div>
     </div>
 </body>
 <script src="myScript.js"></script>
