@@ -21,5 +21,11 @@ function displayColumn(buttonId){
 }
 
 $('textarea').on('change keyup paste', function() { 
-
+    update();
  });
+
+ function update(){
+     $('iframe').contents().find("html").html("<html><head><style type='text/css'>" + $('#cssText').val() + "</style></head><body>" + $('#htmlText').val() + "</body></html>");
+     document.getElementById('outputText').contentWindow.eval($('#javascriptText').val());
+     
+ }
